@@ -1,0 +1,16 @@
+{
+  "individualResults": [
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "flywayVersion": "9.17.0",
+      "database": "abc_1",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-05-12T11:11:38.783065700",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
