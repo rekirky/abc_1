@@ -1,0 +1,32 @@
+CREATE TABLE [stage].[SAB_ConsDynamicWBS]
+(
+[Instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[BuildingTypeId] [varchar] (20) NULL,
+[Concurrency] [int] NULL,
+[ConstructionPhase] [bigint] NULL,
+[Duration] [varchar] (51) NULL,
+[EnumerationAttributeValue] [bigint] NULL,
+[FacadeId] [varchar] (20) NULL,
+[GroupRule] [varchar] (51) NULL,
+[LotStructureElement] [bigint] NULL,
+[Milestone] [varchar] (51) NULL,
+[ReleaseGroup] [bigint] NULL,
+[ReportingActivity] [bigint] NULL,
+[Responsibility] [bigint] NULL,
+[Type] [varchar] (51) NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[GroupCount] [int] NULL,
+[OptionCategory] [bigint] NULL,
+[ElementType] [bigint] NULL,
+[StockStatus] [varchar] (20) NULL
+) ON [PRIMARY]
+GO

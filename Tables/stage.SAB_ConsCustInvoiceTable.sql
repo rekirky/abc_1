@@ -1,0 +1,31 @@
+CREATE TABLE [stage].[SAB_ConsCustInvoiceTable]
+(
+[Instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[ApprovalStatus] [varchar] (51) NULL,
+[CustAccount] [varchar] (20) NULL,
+[DefaultDimension] [varchar] (51) NULL,
+[DueDate] [varchar] (40) NULL,
+[InclTax] [varchar] (51) NULL,
+[InvoiceAmount] [float] NULL,
+[InvoiceId] [varchar] (30) NULL,
+[PaymTermId] [varchar] (100) NULL,
+[Posted] [varchar] (51) NULL,
+[PostingProfile] [varchar] (10) NULL,
+[TransDate] [varchar] (40) NULL,
+[TransTxt] [varchar] (120) NULL,
+[Voucher] [varchar] (30) NULL,
+[DataAreaId] [varchar] (4) NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[MODIFIEDBY] [varchar] (20) NULL,
+[CREATEDBY] [varchar] (20) NULL
+) ON [PRIMARY]
+GO

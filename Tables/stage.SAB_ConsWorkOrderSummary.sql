@@ -1,0 +1,31 @@
+CREATE TABLE [stage].[SAB_ConsWorkOrderSummary]
+(
+[instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[Amount] [float] NULL,
+[ChangeAmount] [float] NULL,
+[CostCategory] [bigint] NULL,
+[CSRequestLine] [bigint] NULL,
+[FinancialInstance] [bigint] NULL,
+[RemainAmount] [float] NULL,
+[Status] [varchar] (51) NULL,
+[TaxItemGroup] [varchar] (10) NULL,
+[TaxGroup] [varchar] (10) NULL,
+[WorkOrder] [bigint] NULL,
+[VENDSTATUS] [int] NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[TradeType] [bigint] NULL,
+[OH_WOPaymentStatus] [varchar] (51) NULL,
+[OH_LastPaymentDate] [varchar] (40) NULL,
+[OH_PaidAmount] [float] NULL,
+[OH_InvoiceAmount] [float] NULL
+) ON [PRIMARY]
+GO

@@ -1,0 +1,33 @@
+CREATE TABLE [stage].[SAB_ConsOption]
+(
+[instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[Description] [varchar] (120) NULL,
+[DescriptionPurch] [varchar] (1000) NULL,
+[DescriptionSales] [varchar] (1000) NULL,
+[DesignCenterPricing] [varchar] (51) NULL,
+[DocumentSection] [bigint] NULL,
+[OptionCategory] [bigint] NULL,
+[OptionId] [varchar] (10) NULL,
+[Subfloor] [bigint] NULL,
+[ValidFrom] [varchar] (40) NULL,
+[ValidTo] [varchar] (40) NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[UseAdjustedMeasurement] [varchar] (51) NULL,
+[OH_DescriptionMarketing] [varchar] (1000) NULL,
+[OH_MarketingShowExternally] [varchar] (51) NULL,
+[OH_DescriptionInternal] [varchar] (1000) NULL,
+[OH_DrawingRequirement] [varchar] (51) NULL,
+[OH_OptionSalesPriceReductionTolerance] [float] NULL,
+[OH_OverrideCategoryTolerance] [varchar] (51) NULL,
+[OH_DrawingCode] [varchar] (10) NULL
+) ON [PRIMARY]
+GO

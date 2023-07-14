@@ -1,0 +1,32 @@
+CREATE TABLE [stage].[SAB_ConsSalesQuotationJour]
+(
+[instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[ExpiryDate] [varchar] (40) NULL,
+[Locked] [varchar] (51) NULL,
+[Lot] [bigint] NULL,
+[Name] [varchar] (120) NULL,
+[QuotationDocNum] [varchar] (30) NULL,
+[SalesDesign] [bigint] NULL,
+[SalesDesignVersion] [bigint] NULL,
+[OfferType] [varchar] (51) NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[CREATEDDATETIME] [varchar] (40) NULL,
+[CREATEDBY] [varchar] (20) NULL,
+[ConfirmedDate] [varchar] (51) NULL,
+[ContractDate] [varchar] (51) NULL,
+[Status] [varchar] (51) NULL,
+[FinancialInstance] [bigint] NULL,
+[Opportunity] [bigint] NULL,
+[PlanChange] [varchar] (51) NULL,
+[Type] [varchar] (51) NULL
+) ON [PRIMARY]
+GO

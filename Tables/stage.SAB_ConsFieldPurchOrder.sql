@@ -1,0 +1,31 @@
+CREATE TABLE [stage].[SAB_ConsFieldPurchOrder]
+(
+[instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[ChangeReason] [bigint] NULL,
+[CSInsuranceReason] [bigint] NULL,
+[CSRequest] [bigint] NULL,
+[FieldPurchOrderId] [varchar] (30) NULL,
+[FinancialInstance] [bigint] NULL,
+[Responsibility] [bigint] NULL,
+[State] [varchar] (51) NULL,
+[Type] [varchar] (51) NULL,
+[Vendor] [bigint] NULL,
+[WorkOrder] [bigint] NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[CREATEDDATETIME] [varchar] (40) NULL,
+[CREATEDBY] [varchar] (20) NULL,
+[UseClaimRequest] [varchar] (51) NULL,
+[WorkOrderDescription] [varchar] (120) NULL,
+[EquipRentalStartDate] [varchar] (40) NULL,
+[InternalExternal] [varchar] (51) NULL
+) ON [PRIMARY]
+GO

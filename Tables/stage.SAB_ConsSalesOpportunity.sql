@@ -1,0 +1,30 @@
+CREATE TABLE [stage].[SAB_ConsSalesOpportunity]
+(
+[Instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[Inactive] [varchar] (51) NULL,
+[InactiveReason] [bigint] NULL,
+[OpportunityId] [varchar] (30) NULL,
+[OwnerWorker] [bigint] NULL,
+[Party] [bigint] NULL,
+[Probability] [varchar] (51) NULL,
+[SalesContingentReason] [bigint] NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[CREATEDDATETIME] [varchar] (40) NULL,
+[Source] [bigint] NULL,
+[ContactByEmail] [varchar] (51) NULL,
+[ContactByMail] [varchar] (51) NULL,
+[ContactByPhone] [varchar] (51) NULL,
+[PropertyUseRecId] [bigint] NULL,
+[Type] [bigint] NULL,
+[PrimaryContact] [bigint] NULL
+) ON [PRIMARY]
+GO

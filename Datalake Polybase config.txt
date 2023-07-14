@@ -1,0 +1,52 @@
+USE master;  
+GO  
+EXEC sp_configure 'show advanced options', '1';
+go
+reconfigure;
+go
+exec sp_configure 'polybase_enabled', 1;
+go
+reconfigure;
+go
+exec sp_configure 'allow polybase export', 1
+go
+reconfigure;
+go
+sp_configure @configname = 'allow polybase export', @configvalue = 1;
+go
+reconfigure;
+go
+sp_configure @configname = 'hadoop connectivity'--check the setting
+
+SELECT name, value, value_in_use, description FROM sys.configurations where name like '%polybase%'
+go
+--================================================================================
+--================================================================================
+--================================================================================
+use d365ODS_UAT
+go
+select @@VERSION
+--https://learn.microsoft.com/en-us/sql/t-sql/statements/create-external-data-source-transact-sql?view=sql-server-ver16&tabs=dedicated
+CREATE MASTER KEY ENCRYPTION BY PASSWORD = ''--see keeper
+go
+
+CREATE EXTERNAL FILE FORMAT [csvQuotedText] WITH 
+(FORMAT_TYPE = DELIMITEDTEXT
+, FORMAT_OPTIONS (FIELD_TERMINATOR = N',', STRING_DELIMITER = N'"', USE_TYPE_DEFAULT = True))
+GO
+
+CREATE DATABASE SCOPED CREDENTIAL   [DataLakeSAS_ReadOnly]
+	WITH IDENTITY = 'SHARED ACCESS SIGNATURE',SECRET = ''
+	--create a SAS with at least read and list permissions, dont include the leading ?
+go
+SELECT * FROM sys.database_scoped_credentials 
+go
+CREATE EXTERNAL DATA SOURCE [d365ADLS] 
+WITH (LOCATION = N'adls://dynamics365-financeandoperations@ohdatalakecentraluat.dfs.core.windows.net/olthofhomes-uat.sandbox.operations.dynamics.com/'
+, CREDENTIAL = [DataLakeSAS_ReadOnly])
+GO
+
+
+
+
+

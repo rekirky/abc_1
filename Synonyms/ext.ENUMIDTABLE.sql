@@ -1,0 +1,2 @@
+CREATE SYNONYM [ext].[ENUMIDTABLE] FOR [d365Replica_PROD].[Supporting].[ENUMIDTABLE]
+GO

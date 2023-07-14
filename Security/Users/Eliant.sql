@@ -1,0 +1,2 @@
+CREATE USER [Eliant] FOR LOGIN [Eliant]
+GO

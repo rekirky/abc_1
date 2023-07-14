@@ -1,0 +1,3 @@
+CREATE SCHEMA [blobTransInc]
+AUTHORIZATION [dbo]
+GO

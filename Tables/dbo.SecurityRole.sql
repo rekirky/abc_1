@@ -1,0 +1,20 @@
+CREATE TABLE [dbo].[SecurityRole]
+(
+[ACCESSTOSENSITIVEDATA] [bigint] NULL,
+[AOTNAME] [varchar] (251) NULL,
+[CONTEXTSTRING] [varchar] (251) NULL,
+[DataLakeModified_DateTime] [datetime2] (0) NULL,
+[DEL_ALLOWCURRENTRECORDS] [bigint] NULL,
+[DEL_ALLOWFUTURERECORDS] [bigint] NULL,
+[DEL_ALLOWPASTRECORDS] [bigint] NULL,
+[DEL_ISENABLED] [bigint] NULL,
+[DESCRIPTION] [varchar] (500) NULL,
+[NAME] [varchar] (251) NULL,
+[RECID] [bigint] NOT NULL,
+[RECVERSION] [bigint] NULL,
+[USERLICENSETYPE] [bigint] NULL,
+[LSN] [varchar] (60) NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[SecurityRole] ADD CONSTRAINT [PK_SecurityRole_RecID] PRIMARY KEY CLUSTERED ([RECID]) ON [PRIMARY]
+GO

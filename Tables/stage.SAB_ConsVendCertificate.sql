@@ -1,0 +1,31 @@
+CREATE TABLE [stage].[SAB_ConsVendCertificate]
+(
+[Instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[Agency] [bigint] NULL,
+[AgencyUnlisted] [varchar] (30) NULL,
+[CertificateNumber] [varchar] (30) NULL,
+[CertificateType] [bigint] NULL,
+[InsuranceAmount] [float] NULL,
+[Insurer] [bigint] NULL,
+[InsurerUnlisted] [varchar] (30) NULL,
+[LotStructureElement] [bigint] NULL,
+[Override] [varchar] (51) NULL,
+[OverrideReason] [bigint] NULL,
+[OverrideReviewDate] [varchar] (40) NULL,
+[ValidFrom] [varchar] (40) NULL,
+[ValidTo] [varchar] (40) NULL,
+[Vendor] [bigint] NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[CREATEDDATETIME] [varchar] (40) NULL,
+[DataArea] [varchar] (4) NULL
+) ON [PRIMARY]
+GO

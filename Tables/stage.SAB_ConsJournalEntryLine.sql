@@ -1,0 +1,33 @@
+CREATE TABLE [stage].[SAB_ConsJournalEntryLine]
+(
+[instance] [bigint] NULL,
+[LastProcessedChange_DateTime] [varchar] (50) NULL,
+[DataLakeModified_DateTime] [varchar] (50) NULL,
+[Start_LSN] [varchar] (50) NULL,
+[End_LSN] [varchar] (50) NULL,
+[DML_Action] [varchar] (100) NULL,
+[Seq_Val] [varchar] (50) NULL,
+[Update_Mask] [varchar] (400) NULL,
+[RECID] [bigint] NULL,
+[AmountCurCredit] [float] NULL,
+[AmountCurDebit] [float] NULL,
+[BankAccountId] [varchar] (10) NULL,
+[BankDepositNum] [varchar] (30) NULL,
+[BankDepositVoucher] [varchar] (51) NULL,
+[BankTransType] [varchar] (10) NULL,
+[CostCategory] [bigint] NULL,
+[JournalEntry] [bigint] NULL,
+[DefaultDimension] [varchar] (51) NULL,
+[Description] [varchar] (120) NULL,
+[FinancialInstance] [bigint] NULL,
+[LedgerDimension] [varchar] (51) NULL,
+[LineNumber] [bigint] NULL,
+[LineType] [varchar] (51) NULL,
+[PaymReference] [varchar] (35) NULL,
+[RevenueCategory] [bigint] NULL,
+[DataAreaId] [varchar] (4) NULL,
+[PARTITION] [bigint] NULL,
+[RECVERSION] [int] NULL,
+[DataArea] [varchar] (4) NULL
+) ON [PRIMARY]
+GO

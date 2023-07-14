@@ -1,0 +1,5 @@
+TableName	ColumnName	DataTypeWeak	DataTypeStrong
+'',SysRowVersionNumber	varchar(100)	varchar(100)
+DirPartyTable	Description	varchar(120)	varchar(120)
+OH_ConsResponsibilityHistory	SYSROWVERSIONNUMBER	varchar(50)	varchar(50)
+SecurityRole	Description	varchar(500)	varchar(500)
