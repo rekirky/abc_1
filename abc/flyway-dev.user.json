@@ -1,0 +1,9 @@
+{
+  "version": "2.0",
+  "developmentDatabase": {
+    "connectionProvider": {
+      "type": "UsernamePassword",
+      "url": "jdbc:sqlserver://localhost;databaseName=abc_1;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
+    }
+  }
+}
